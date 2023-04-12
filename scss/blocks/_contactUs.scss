@@ -1,0 +1,112 @@
+.contactUs {
+    margin-top: 100px;
+
+    &-wrp {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contant-title {
+        @include primaryFont(48px, 59px, 700);
+        color: $headerMenu;
+        margin-bottom: 8px;
+    }
+    &__contant-text {
+        @include primaryFont(16px, 20px, 400);
+        color: $headerMenu;
+        opacity: 0.5;
+    }
+    &__contant-form {
+        margin-top: 24px;
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+    }
+    &__contant-input {
+        input {
+            width: 619px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 10px;
+            padding: 18px 0 18px 16px;
+            border: none;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+
+            &::placeholder {
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                opacity: 0.5;
+            }
+        }
+        textarea {
+            width: 619px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 10px;
+            padding: 18px 0 130px 16px;
+            border: none;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+
+            &::placeholder {
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                opacity: 0.5;
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-left: 29px;
+    }
+    &__info-title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+    &__info-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: $mobileWidth) {
+    .contactUs {
+        &-wrp {
+            flex-direction: column-reverse;
+        }
+        &__info {
+            margin-left: 0;
+        }
+        &__contant {
+            &-input {
+                input {
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

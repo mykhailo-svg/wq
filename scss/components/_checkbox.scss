@@ -1,0 +1,39 @@
+input[type="checkbox"] {
+    display: none;
+}
+.login__label {
+    padding-left: 0 !important;
+}
+input[type="checkbox"] + .login__label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1.5px solid #F49F1C;
+    background-color: none;
+    border-radius: 5px; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+}
+.login__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #F49F1C;
+    user-select: none;
+}
+input[type="checkbox"]:checked + .login__label:before {
+    content: "\2713";
+    color: #F49F1C;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    background-color: none;
+}

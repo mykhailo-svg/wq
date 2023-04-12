@@ -1,0 +1,16 @@
+.rekomandation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 114px 0 100px 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        img {
+            opacity: 0.4;
+        }
+    }
+}

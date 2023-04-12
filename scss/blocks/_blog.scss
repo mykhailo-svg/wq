@@ -1,0 +1,136 @@
+.blog {
+    &-mt {
+        margin-bottom: 216px;
+    }
+    &-open {
+        margin-bottom: 127px;
+    }
+    &-wrp {
+        margin-left: 13px;
+    }
+    &__top {
+        margin-top: 40px;
+    }
+    &__contant {
+        display: flex;
+        column-gap: 30px;
+
+        img {
+            @include borderRadius(15px);
+        }
+    }
+    &__contant-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+    &__contant-item {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+
+        h2 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+        form {
+            button {
+                background: none;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                padding: 10px 83px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                border: 1px solid $button;
+                transition: .4s;
+    
+                &:hover {
+                    background: $button;
+                }
+            }
+        }
+    }
+    &__open {
+        margin-top: 40px;
+        padding-right: 20px;
+
+        img {
+            margin-bottom: 24px;
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+    &__open-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 94%;
+    }
+    &__open-item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &__list {
+        margin-top: 19px;
+        display: flex;
+        column-gap: 16px;
+    }
+    &__item {
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            padding: 4px 8px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.5px);
+            border-radius: 15px;
+            transition: .3s;
+
+            &:hover {
+                color: $button;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tabletWidth) {
+    .blog {
+        &__contant {
+            flex-direction: column;
+            row-gap: 16px;
+
+            &-img {
+                img {
+                    width: 100%;
+                    @include borderRadius(30px);
+                }
+            }
+            &-list {
+                row-gap: 16px;
+            }
+            &-item {
+                form {
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

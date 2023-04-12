@@ -1,0 +1,84 @@
+.special {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 73px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    &-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        /* or 36px */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    &__wrp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+        column-gap: 30px;
+        row-gap: 30px;
+        margin-top: 24px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 9px;
+        box-sizing: border-box;
+        width: 350px;
+        height: 215px;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+    }
+    &__item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        /* White */
+
+        color: #FFFFFF;
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            /* or 21px */
+            width: 318px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            /* White */
+
+            color: #FFFFFF;
+
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,357 @@
+.cash {
+    &-wrp {
+        display: flex;
+        width: 98%;
+    }
+    &__social {
+        margin: 98.5px 21.5px 0 103px;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 74px;
+        }
+        &-link {
+            svg {
+                fill: $headerMenu;
+                transition: all .4s;
+
+                &:hover {
+                    fill: $button;
+                }
+            }
+        }
+    }
+    &__line {
+        margin-top: -5px;
+    }
+    &__contant {
+        margin-left: 12.5px;
+        margin-top: 80px;
+        display: flex;
+    }
+    &__info {
+        &-title {
+            font-family: 'Montserrat';
+            @include primaryFont(60px, 73px, 700);
+            display: flex;
+            align-items: center;
+            background: linear-gradient(180deg, #FFFFFF 14.46%, rgba(255, 255, 255, 0.42) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            width: 540px;
+        }
+        &-text {
+            margin-top: 22px;
+            @include primaryFont(18px, 22px, 400);
+            color: $headerMenu;
+            width: 540px;
+        }
+    }
+    &__card {
+        margin-top: 22px;
+        box-sizing: border-box;
+        width: 499px;
+        height: 115px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__bank {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+    &__visa {
+        &-title {
+            margin-bottom: 14px;
+        }
+    }
+    &__progres {
+        padding: 24px 24px 18px 24px;
+        box-sizing: border-box;
+        width: 45.5%;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13px);
+        border-radius: 15px;
+
+        &-title {
+            @include primaryFont(24px, 42px, 700);
+            color: $headerMenu;
+        }
+        &-mini {
+            color: $button;
+            @include primaryFont(14px, 17px, 700);
+            margin: 8px 0;
+        }
+    }
+    &__input {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 10px;
+
+        &-wrp {
+            width: 21%;
+            margin-right: auto;
+        }
+        &-label {
+            font-family: 'Montserrat';
+            color: $headerMenu;
+            opacity: 0.5;
+            @include primaryFont(12px, 15px, 400);
+        }
+        &-cont {
+            margin-top: 4px;
+
+            input {
+                background: none;
+                width: 100%;
+                height: 39px;
+                display: flex;
+                align-items: center;
+                border: none;
+                color: $headerMenu;
+                @include primaryFont(32px, 39px, 500);
+
+                &:focus {
+                    outline: none;
+                }
+                &::placeholder {
+                    font-family: 'Montserrat';
+                    color: $headerMenu;
+                    @include primaryFont(32px, 39px, 500);
+                }
+            }
+        }
+    }
+    &__dekor {
+        display: flex;
+
+        &-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-title {
+            margin-left: 4px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+
+            p {
+                color: $headerMenu;
+                @include primaryFont(16px, 20px, 500);
+            }
+        }
+        &-svg {
+            background: rgba(255, 255, 255, 0.04);
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(5px);
+            padding: 12px;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include borderRadius(50%);
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+    &__lock {
+        display: flex;
+        column-gap: 16px;
+    }
+    &__lock-cont {
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 10px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.4s;
+
+        &:hover{
+            svg {
+                fill: $button;
+            }
+        }
+    }
+    &__fixed {
+        margin-top: 8px;
+    }
+    &__address {
+        margin-top: 19.5px;
+        
+        input {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 10px;
+            border: none;
+            padding: 18px 0 18px 16px;
+            width: -webkit-fill-available;
+            color: $headerMenu;
+            @include primaryFont(16px, 20px, 400);
+
+            &::placeholder {
+                font-family: 'Montserrat';
+                color: $headerMenu;
+                opacity: 0.5;
+                @include primaryFont(16px, 20px, 400);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__advances {
+        h4 {
+            color: $button;
+            margin: 24px 0;
+        }
+    }
+    &-exchange {
+        a {
+            padding: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $button;
+            border: none;
+            color: $headerMenu;
+            font-family: 'Montserrat';
+            @include primaryFont(18px, 22px, 500);
+            @include borderRadius(10px);
+            user-select: none;
+            transition: .4s;
+
+            &:hover {
+                background-color: rgba(244, 159, 28, 0.6);
+            }
+        }
+    }
+    &__svg {
+        margin-top: 24px;
+        margin-bottom: 18px;
+        display: flex;
+        justify-content: center;
+    }
+    &__cooming {
+        width: 260px;
+        height: 72px;
+    }
+}
+
+@media screen and (max-width: $tabletWidth) {
+    .cash {
+        &__contant {
+            margin-top: 107px;
+        }
+        &__social {
+            display: none;
+        }
+        &__line {
+            display: none;
+        }
+        &__contant {
+            display: flex;
+            flex-direction: column;
+        }
+        &__info {
+            &-title {
+                width: 690px;
+            }
+            &-text {
+                width: 690px;
+            }
+        }
+        &__card {
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 42px;
+            margin-bottom: 30px;
+        }
+        &__progres {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: $mobileWidth) {
+    .cash {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__contant {
+            margin-top: 44px;
+            width: 70vh;
+        }
+        &__info {
+            &-title {
+                width: 358px;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+            }
+            &-text {
+                width: 358px;
+            }
+        }
+        &__card {
+            padding: 0 10px;
+            width: 78%;
+        }
+        &__cooming {
+            width: 169.43px;
+            height: 53.78px;
+        }
+        &__progres {
+            padding: 15px 8px;
+            width: 79%;
+
+            &-title {
+                text-align: center;
+            }
+        }
+        &__input {
+            padding: 8px;
+            justify-content: inherit;
+
+            &-cont {
+                input {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    width: 111px;
+                }
+
+                &::placeholder {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &__dekor {
+            display: flex;
+    
+            &-info {
+                justify-content: inherit;
+                column-gap: 15px
+            }
+            &-title {
+                p {
+                    @include primaryFont(12px, 15px, 500);
+                }
+            }
+        }
+    } 
+}

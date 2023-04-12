@@ -1,0 +1,44 @@
+.faq {
+    background: url(../../img/svg/faq.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 110%;
+
+    &-wrp {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 13px;
+    }
+    &__info {
+        margin-top: 79px;
+    }
+    &__info-title {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 73px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(180deg, #FFFFFF 14.46%, rgba(255, 255, 255, 0.42) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    &__info-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+    &__info-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}
+
+@media screen and (max-width: $mobileWidth) {
+    .faq {
+        background-position: center;
+    }
+}

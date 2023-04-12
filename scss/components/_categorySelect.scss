@@ -1,0 +1,84 @@
+.select {
+	position: relative;
+	display: inline-block;
+
+	&.is-active {
+		.select__body {
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.4s;
+		}
+		.select__icon {
+			transform: rotate(0deg);
+		}
+	}
+	&__header {
+		height: 40px;
+		background: none;
+		cursor: pointer;
+		user-select: none;
+		border-radius: 7px;
+		display: flex;
+		align-items: center;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		border-radius: 10px;
+		color: white;
+		display: flex;
+		column-gap: 39px;
+	}
+	&__current {
+		font-size: 14px;
+		line-height: 1px;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+		column-gap: 4px;
+	}
+	&__icon {
+		align-items: center;
+		display: flex;
+		flex-shrink: 0;
+		justify-content: center;
+		height: 40px;
+		margin-left: auto;
+		text-align: center;
+		width: 40px;
+		transition: all 0.4s;
+		fill: #FFFFFF;
+		transform: rotate(-180deg);
+	}
+	
+	&__body {
+		background: none;
+		border-top: 0;
+		opacity: 1;
+		visibility: visible;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		transition: all 0.4s;
+		@include borderRadius(10px);
+		background: rgba(255, 255, 255, 0.09);
+		
+	}
+	&__item {
+		cursor: pointer;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 13px 0 13px 15px;
+		display: flex;
+		color: white;
+		font-size: 16px;
+		line-height: 17px;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		column-gap: 4px;
+		@include borderRadius(10px);
+	}
+	
+	&__item:hover {
+		background-color: peru;
+	}
+}

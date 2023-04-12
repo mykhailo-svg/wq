@@ -1,0 +1,10 @@
+.raise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
